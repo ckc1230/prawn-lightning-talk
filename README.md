@@ -1,9 +1,10 @@
 # prawn-lightning-talk
 
 ## Install Ruby Gem
-1.Add to the Rails Gemfile
+1. Add to the Rails Gemfile
 > gem 'prawn-rails'
 
+## Enable PDF Response
 create a Mime Type in config/initializers/mime_types
 > Mime::Type.register "application/pdf", :pdf
 
@@ -11,6 +12,7 @@ create a Mime Type in config/initializers/mime_types
 * This allows our Rails App to know how to respond to a pdf request
 	* Common examples: application/json, application/pdf, text/html, image/png, image/jpg
 
+## Create PDF Response
 In your controller, you can now request different formats on a single view
 
 > def show
@@ -24,6 +26,7 @@ In your controller, you can now request different formats on a single view
 > 	end
 > end
 
+## Add Link to PDF
 To access the html, follow your usual route: /orders/:id
 To access the pdf, add '.pdf' to the end of the original route
 
