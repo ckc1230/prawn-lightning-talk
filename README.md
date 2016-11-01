@@ -2,9 +2,9 @@
 
 ## Install Ruby Gem
 1. Add to the Rails Gemfile
-
-> gem 'prawn-rails'
-
+```
+gem 'prawn-rails'
+```
 ## Enable PDF Response
 2. Create a Mime Type in config/initializers/mime_types
 > Mime::Type.register "application/pdf", :pdf
