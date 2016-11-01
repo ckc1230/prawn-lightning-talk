@@ -2,6 +2,7 @@
 
 ## Install Ruby Gem
 1. Add to the Rails Gemfile
+
 > gem 'prawn-rails'
 
 ## Enable PDF Response
