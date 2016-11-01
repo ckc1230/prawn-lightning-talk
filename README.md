@@ -1,5 +1,7 @@
 # prawn-lightning-talk
 
+## Install Ruby Gem
+1.Add to the Rails Gemfile
 > gem 'prawn-rails'
 
 create a Mime Type in config/initializers/mime_types
