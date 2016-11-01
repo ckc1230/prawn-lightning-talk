@@ -35,6 +35,6 @@ To access the pdf, add '.pdf' to the end of the original route
 
 
 ### References:
-http://prawnpdf.org/docs/0.11.1/Prawn/Document.html
-http://prawnpdf.org/manual.pdf
-https://www.youtube.com/watch?v=vp3nrafhjEc
+* http://prawnpdf.org/docs/0.11.1/Prawn/Document.html
+* http://prawnpdf.org/manual.pdf
+* https://www.youtube.com/watch?v=vp3nrafhjEc
