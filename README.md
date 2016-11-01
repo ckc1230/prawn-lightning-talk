@@ -5,7 +5,7 @@
 > gem 'prawn-rails'
 
 ## Enable PDF Response
-create a Mime Type in config/initializers/mime_types
+2. Create a Mime Type in config/initializers/mime_types
 > Mime::Type.register "application/pdf", :pdf
 
 * A Mime type (or media type) is a two-part identifier for file formats and format contents
@@ -13,7 +13,8 @@ create a Mime Type in config/initializers/mime_types
 	* Common examples: application/json, application/pdf, text/html, image/png, image/jpg
 
 ## Create PDF Response
-In your controller, you can now request different formats on a single view
+
+3. In your controller, you can now request different formats on a single view
 
 > def show
 >     @order = Order.find(params[:id])
@@ -33,7 +34,7 @@ To access the pdf, add '.pdf' to the end of the original route
 > <%= link_to 'Print Receipt (PDF)', order_path(@order, format: "pdf") %>
 
 
-References:
+### References:
 http://prawnpdf.org/docs/0.11.1/Prawn/Document.html
 http://prawnpdf.org/manual.pdf
 https://www.youtube.com/watch?v=vp3nrafhjEc
