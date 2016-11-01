@@ -5,18 +5,10 @@
 ```
 gem 'prawn-rails'
 ```
-## Enable PDF Response
-2. Create a Mime Type in config/initializers/mime_types
-```
-Mime::Type.register "application/pdf", :pdf
-```
-* A Mime type (or media type) is a two-part identifier for file formats and format contents
-* This allows our Rails App to know how to respond to a pdf request
-	* Common examples: application/json, application/pdf, text/html, image/png, image/jpg
 
 ## Create PDF Response
 
-3. In your controller, you can now request different formats on a single view
+2. In your controller, you can now request different formats on a single view
 ```
 def show
      @order = Order.find(params[:id])
